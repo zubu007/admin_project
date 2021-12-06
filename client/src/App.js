@@ -5,6 +5,8 @@ import Register from './pages/Register';
 import DashAdm from './pages/DashAdm';
 import DashEmp from './pages/DashEmp';
 import DashCust from './pages/DashCust';
+import Profile from './pages/Profile';
+import EditProfile from './pages/EditProfile';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/dashadm" element={<DashAdm />} />
           <Route path="/dashEmp" element={<DashEmp />} />
           <Route path="/dashcust" element={<DashCust />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/editprofile" element={<EditProfile />} />
         </Routes>
     </div>
     </BrowserRouter>

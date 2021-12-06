@@ -6,13 +6,21 @@ import axios from 'axios'
 
 function Login() {
     const goto = useNavigate()
-    const [path, setPath] = useState('')
+
+    const [loginstatus, setLoginStatus] = useState()
+    var loginMessage = <h1> </h1>;
+    if (loginstatus == 'fail') {
+        loginMessage = <h1> password is wrong </h1>;
+      } else if(loginstatus == 'unknown') {
+        loginMessage = <h1> Email not registered </h1>;
+        }
 
     function handleSubmit(e) {
         e.preventDefault()
         const data = new FormData(e.target)
-        const value = Object.fromEntries(data)
-        console.log(value)  
+        var value = Object.fromEntries(data)
+        const date = new Date()
+        value['time'] = date.toLocaleTimeString()
         if (value.email === 'admin@admin.com') {
             if (value.password === 'admin') {
                 goto('/dashadm')
@@ -28,13 +36,10 @@ function Login() {
         try {
             const response = await axios.post('http://localhost:3001/users/', value)
             if (response.data.msg === 'success') {
-                setPath(response.data.role)
-                goto(response.data.role)
-                console.log(path)
-            }else if (response.data.msg === 'fail') {
-                console.log('password is wrong')
-            }else if (response.data.msg === 'unknown'){
-                console.log('user not found')
+                goto(response.data.role, {state: {user: response.data.user}})
+            }else  {
+                setLoginStatus(response.data.msg)
+                console.log(response.data.msg)
             }
             console.log(response)
         }catch(err) {
@@ -55,6 +60,7 @@ function Login() {
                         Password:
                         <input type="password" name="password" className="form-password" placeholder="Enter password" />
                     </label>
+                    {loginMessage}
                     <button type="submit" className="btn btn-primary">Log in</button>
                 </form>
                 <Link to="/register">

@@ -1,50 +1,5 @@
 {
   "Customers": {
-    "poeir": {
-      "name": "ahad",
-      "email": "poeir",
-      "phone": "12354",
-      "password": "poqwe",
-      "details": "asd",
-      "roles": "Customer",
-      "archive": false
-    },
-    "tormaire": {
-      "name": "pokemon",
-      "email": "tormaire",
-      "phone": "12354",
-      "password": "poqwe",
-      "details": "okay bhalo asi",
-      "roles": "Customer",
-      "archive": false
-    },
-    "nafisa@gmail.com": {
-      "name": "nafisa",
-      "email": "nafisa@gmail.com",
-      "phone": "-0123",
-      "password": "poe",
-      "details": "bhalo maa",
-      "roles": "Customer",
-      "archive": false
-    },
-    "asd": {
-      "name": "asdasd",
-      "email": "asd",
-      "phone": "jio",
-      "password": "23",
-      "details": "dakjd",
-      "roles": "Customer",
-      "archive": false
-    },
-    "tor": {
-      "name": "asdasd",
-      "email": "tor",
-      "phone": "jio",
-      "password": "23",
-      "details": "dakjd",
-      "roles": "Customer",
-      "archive": false
-    },
     "pokemon": {
       "name": "asdasd",
       "email": "pokemon",
@@ -52,37 +7,21 @@
       "password": "23",
       "details": "dakjd",
       "roles": "Customer",
-      "archive": false
+      "archive": false,
+      "archived": false
     },
-    "okay@gmail.cm": {
-      "name": "tormiare",
-      "email": "okay@gmail.cm",
-      "phone": "09123",
-      "password": "qwer",
-      "details": "asdasda",
-      "roles": "Customer",
-      "archive": false
-    },
-    "pokemon@gmail.com": {
-      "name": "pokemon",
-      "email": "pokemon@gmail.com",
-      "phone": "091234",
+    "ahadagain@gmail.com": {
+      "name": "ahad",
+      "email": "ahadagain@gmail.com",
+      "phone": "098",
       "password": "1234",
-      "details": "I am a QT",
+      "details": "okay",
       "roles": "Customer",
-      "archive": false
+      "archive": false,
+      "archived": false
     }
   },
   "Employees": {
-    "ami_employer": {
-      "name": "boss",
-      "email": "ami_employer",
-      "phone": "09123",
-      "password": "poke",
-      "details": "joss ami onk powerfull",
-      "roles": "Employer",
-      "active": false
-    },
     "chati@gai.com": {
       "name": "chamch",
       "email": "chati@gai.com",
