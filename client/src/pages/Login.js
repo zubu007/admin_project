@@ -25,7 +25,7 @@ function Login() {
             if (value.password === 'admin') {
                 goto('/dashadm')
             }else {
-                console.log('password is wrong')
+                setLoginStatus('fail')
             }
         } else {
         sendPost(value)

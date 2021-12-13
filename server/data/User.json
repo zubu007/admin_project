@@ -11,14 +11,23 @@
       "archived": false
     },
     "ahadagain@gmail.com": {
-      "name": "ahad",
+      "name": "ahad joss",
       "email": "ahadagain@gmail.com",
-      "phone": "098",
+      "phone": "1234",
       "password": "1234",
-      "details": "okay",
+      "details": "This is changed",
       "roles": "Customer",
       "archive": false,
       "archived": false
+    },
+    "sadiya@gmail.com": {
+      "name": "sadiya yesmin",
+      "email": "sadiya@gmail.com",
+      "phone": "1234",
+      "password": "qwer",
+      "details": "onk shundor ekta meye. Pokemon <3",
+      "roles": "Customer",
+      "archive": false
     }
   },
   "Employees": {

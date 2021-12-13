@@ -10,7 +10,7 @@ function CustomerRow(props) {
         sendPost(user) }
 
     const handleEdit = () => {
-        navigate('/editprofile', {state: {user: props.customer}})
+        navigate('/editprofile', {state: {customer: props.customer, employee: props.employee}})
     }
 
     const sendPost = async (user) => {

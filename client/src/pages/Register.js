@@ -45,7 +45,7 @@ function Register() {
                 </label>
                 <label>
                     Email
-                    <input type="text" name="email" className="form-control" />
+                    <input type="email" name="email" className="form-control" />
                 </label>
                 <label>
                     Phone 

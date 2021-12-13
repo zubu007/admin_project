@@ -11,6 +11,21 @@ app.use(cors())
 app.use(express.json());
 var server = app.listen(3001);
 
+app.post('/edituser', function(req, res) {
+    var email = req.body.email;
+    var reply = {
+        msg: ""
+    }
+    User.Customers[email].name = req.body.name;
+    User.Customers[email].phone = req.body.phone;
+    User.Customers[email].details = req.body.details;
+    fs.writeFileSync("data/User.json", JSON.stringify(User, null, 2));
+    reply.msg = 'success'
+    res.send(reply)
+
+})
+
+
 // Logout time
 app.post('/logout', function (req, res) {
     var time = req.body.time;

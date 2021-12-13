@@ -43,7 +43,7 @@ function DashEmp() {
             <p>Total Customer: {Object.keys(customerlist).length}</p>
             <DateTime/>
             {Object.keys(customerlist).map(key => {
-                return <CustomerRow customer={customerlist[key]}/>
+                return <CustomerRow customer={customerlist[key]} employee = {location.state.user}/>
 
             })}
             <button onClick={handleClick}>Logout</button>
